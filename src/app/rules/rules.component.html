@@ -1,0 +1,63 @@
+<div *ngIf="isLevelUp" class="w3-container w3-content w3-padding-64" style="max-width:800px;">
+<!--  todo Add Go rules -->
+</div>
+<div *ngIf="!isLevelUp" class="w3-container w3-content w3-padding-64" style="max-width:800px;">
+  The most commonly played variant of Go is usually played in an initially empty 19x19 board and the goal
+  is that of getting more territory than your enemy. The concept of territory is however a bit difficult to understand
+  if you have never played before and a 19x19 board can feel intimidating at first. That is why, for your first games,
+  we recommend you to play an easier and faster to play variant named <i>Capture Go</i>. Here are the 5 rules you need
+  to know in order to play it.
+
+  <h4 class="w3-wide">Setup</h4>
+  Each player chooses a color (black or white) and takes all stones of that color. Then you start the game on an empty
+  9x9 board with the configuration shown below.
+  <p>
+  <img src="https://drive.google.com/uc?id=1v5KrKaE8OWi7umM0Z5xXaUJPopdL-bAg"
+       class="padded-img"
+       alt="board start">
+  </p>
+
+  <h4 class="w3-wide">Placing stones</h4>
+  Black plays first. Black and white take turns placing one stone at a time on an empty <b>intersection</b> (not in the squares!).
+  Once a stone is played it <b>cannot</b> be moved. Stones can also be placed in the intersections of corners and edges.
+
+  <h4 class="w3-wide">Liberties of groups</h4>
+  Stones of the same color that touch each other <b>along a line</b> form a <i>group</i>. The  intersections connected
+  to a group <b>along a line</b> are called it's <i>liberties</i>.
+  <br>
+  There are 8 groups in the picture below. 6 of them have their liberties drawn and counted can you do the remaining 2?
+
+  <p>
+  <img src="https://drive.google.com/uc?id=1AVYCrwu85tIgqviCliBHih0IHVHm1jbF"
+       class="padded-img"
+       alt="liberties">
+  </p>
+
+  In the picture below there are 7 different groups, all numbered, can you find the liberties of each group?
+
+  <p>
+  <img src="https://drive.google.com/uc?id=1UC7N4Yn_DBCeSTwv9OJ-24m4zKDLkXs-"
+       class="padded-img"
+       alt="group count">
+  </p>
+
+  <h4 class="w3-wide">Capturing</h4>
+  As soon as a group of stones has no liberties that group is <b>captured</b> and removed off the board. Note that a
+  stone can be placed where it has no liberties as long as, by doing so, it captures the opponent.
+  <br>
+  Each black group below on the left only has one liberty! see what happens when white fills the last liberty (right).
+  <p style="align-content: space-around">
+  <img src="https://drive.google.com/uc?id=1uiaXRrui4q_SWJv77d5OuAK254dbO2iW"
+       class="padded-img"
+       alt="capture">
+
+  <img src="https://drive.google.com/uc?id=1ih1PR4n7Y42RNFSvvzncRTS80Sfae_rR"
+       class="padded-img"
+       alt="remove">
+  </p>
+
+  <h4 class="w3-wide">How to win</h4>
+
+  The winner is the first player to capture one or more stones.
+
+</div>
