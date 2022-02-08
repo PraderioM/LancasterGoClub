@@ -1,7 +1,9 @@
 .padded-img {
   padding-left: 2em;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-right: 6em;
-  height: 150px;
+  height: 160px;
   cursor: pointer;
 }
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
