@@ -1,0 +1,14 @@
+.logo-container{
+  padding: 0 12px 0 0;
+}
+
+.logo-container:hover {cursor: pointer}
+
+.cover {
+  padding-top: 3vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 100vh;
+  width: auto;
+}
