@@ -1,0 +1,8 @@
+.appearing {
+  display: none;
+}
+
+.appearing-trigger{}
+.appearing-trigger:hover + .appearing {
+   display: block;
+ }
