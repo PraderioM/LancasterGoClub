@@ -58,7 +58,7 @@ export class AppComponent {
   }
 
   getIsAggressiveText(): string {
-    return this.isAggressive? "Pacific mode" : "Aggressive mode";
+    return this.isAggressive? "Pacific mode" : "Calm mode";
   }
 
   getIsLevelUpText(): string {
