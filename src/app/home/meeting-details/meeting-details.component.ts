@@ -10,6 +10,7 @@ export class MeetingDetailsComponent implements OnInit {
   @Input() meetingTime: string;
   @Input() linkToPlace: string;
   @Input() place: string;
+  @Input() extraInformation: string = '';
 
   constructor() { }
 
