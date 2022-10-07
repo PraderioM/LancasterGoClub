@@ -13,7 +13,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-Type `npx gulp` afterwards to join created files into a single HTML file.
+Type `npx gulp` afterwards to join created files into a single HTML file. You need to add the content of the "preamble.html" file to the top of the generated document before copying the whole thing on the LUSU webpage.
 
 ## Running unit tests
 
