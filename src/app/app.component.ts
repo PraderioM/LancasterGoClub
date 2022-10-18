@@ -9,6 +9,7 @@ import {getHeaderClass} from './utils';
 export class AppComponent {
   homeSelected = true;
   rulesSelected = false;
+  josekleSelected = false;
   resourcesSelected = false;
 
   isAggressive = false;
@@ -16,6 +17,7 @@ export class AppComponent {
 
   deselectAll(): void {
     this.homeSelected = false;
+    this.josekleSelected = false;
     this.rulesSelected = false;
     this.resourcesSelected = false;
   }
@@ -28,6 +30,11 @@ export class AppComponent {
   selectRules(): void {
     this.deselectAll();
     this.rulesSelected = true;
+  }
+
+  selectJosekle(): void {
+    this.deselectAll();
+    this.josekleSelected = true;
   }
 
   selectResources(): void {
@@ -46,6 +53,12 @@ export class AppComponent {
   getHomeHeaderClass(): object {
     const headerClass = getHeaderClass();
     headerClass['w3-selected'] = this.homeSelected;
+    return headerClass;
+  }
+
+  getJosekleHeaderClass(): object {
+    const headerClass = getHeaderClass();
+    headerClass['w3-selected'] = this.josekleSelected;
     return headerClass;
   }
 

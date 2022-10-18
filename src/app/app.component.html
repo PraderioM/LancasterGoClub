@@ -7,6 +7,7 @@
 <!--    </span>-->
     <span [ngClass]="getHomeHeaderClass()" (click)="selectHome()">ABOUT US</span>
     <span [ngClass]=getRulesHeaderClass() (click)="selectRules()">RULES</span>
+    <span [ngClass]=getJosekleHeaderClass() (click)="selectJosekle()">JOSEKLE</span>
     <span [ngClass]=getResourcesHeaderClass() (click)="selectResources()">MORE</span>
     <span *ngIf="homeSelected"
           [ngClass]=getAggressiveHeaderClass()
@@ -26,4 +27,5 @@
 </div>
 <app-home *ngIf="homeSelected" [isAggressive]="isAggressive"></app-home>
 <app-rules *ngIf="rulesSelected" [isLevelUp]="isLevelUp"></app-rules>
+<app-josekle *ngIf="josekleSelected"></app-josekle>
 <app-resources *ngIf="resourcesSelected"></app-resources>
