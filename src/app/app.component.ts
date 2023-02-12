@@ -51,13 +51,13 @@ export class AppComponent {
   }
 
   getHomeHeaderClass(): object {
-    const headerClass = getHeaderClass();
+    const headerClass: any = getHeaderClass();
     headerClass['w3-selected'] = this.homeSelected;
     return headerClass;
   }
 
   getJosekleHeaderClass(): object {
-    const headerClass = getHeaderClass();
+    const headerClass: any = getHeaderClass();
     headerClass['w3-selected'] = this.josekleSelected;
     return headerClass;
   }
@@ -79,13 +79,13 @@ export class AppComponent {
   }
 
   getRulesHeaderClass(): object {
-    const headerClass = getHeaderClass();
+    const headerClass: any = getHeaderClass();
     headerClass['w3-selected'] = this.rulesSelected;
     return headerClass;
   }
 
   getResourcesHeaderClass(): object {
-    const headerClass = getHeaderClass();
+    const headerClass: any = getHeaderClass();
     headerClass['w3-selected'] = this.resourcesSelected;
     return headerClass;
   }

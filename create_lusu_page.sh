@@ -1,0 +1,17 @@
+#!/bin/bash
+
+INDEX_FILE_NAME=dist/lancaster-go-club/index.html
+OUTPUT_FILE_NAME=dist/lusu_page.html
+TMP_FILE_NAME=dist/tmp.html
+
+echo 'Building angular project.'
+ng build --configuration production
+
+echo 'Building temporary single HTML.'
+inline-to-single-html/venv/bin/python inline-to-single-html/inline_to_single_html.py --output-file $TMP_FILE_NAME $INDEX_FILE_NAME
+
+echo 'Adding preamble.'
+cat preamble.html $TMP_FILE_NAME >> $OUTPUT_FILE_NAME
+rm $TMP_FILE_NAME
+
+echo 'lusu html page has been stored in ' $OUTPUT_FILE_NAME

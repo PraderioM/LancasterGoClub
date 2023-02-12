@@ -6,7 +6,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./rules.component.css']
 })
 export class RulesComponent implements OnInit {
-  @Input() isLevelUp: boolean;
+  @Input() isLevelUp: boolean = false;
 
   constructor() { }
 
