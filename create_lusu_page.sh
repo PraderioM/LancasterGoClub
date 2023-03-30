@@ -4,6 +4,8 @@ INDEX_FILE_NAME=dist/lancaster-go-club/index.html
 OUTPUT_FILE_NAME=dist/lusu_page.html
 TMP_FILE_NAME=dist/tmp.html
 
+rm $OUTPUT_FILE_NAME
+
 echo 'Building angular project.'
 ng build --configuration production
 
