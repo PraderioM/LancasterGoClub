@@ -13,8 +13,12 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist/lancaster-go-club",
-            "index": "src/index.html",
+            "outputPath": "docs",
+            "baseHref": "/LancasterGoClub/",
+            "index": {
+              "input": "src/index.html",
+              "output": "404.html"
+            },
             "main": "src/main.ts",
             "polyfills": [
               "zone.js"

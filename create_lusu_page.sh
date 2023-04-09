@@ -1,6 +1,6 @@
 #!/bin/bash
 
-INDEX_FILE_NAME=dist/lancaster-go-club/index.html
+INDEX_FILE_NAME=docs/404.html
 OUTPUT_FILE_NAME=dist/lusu_page.html
 TMP_FILE_NAME=dist/tmp.html
 

@@ -16,9 +16,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/lancaster-go-club` directory. Use the `--configuration production` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `docs` directory. Use the `--configuration production` flag for a production build.
+This will update the GitHub pages after you make the  push.
 
-**If you want to generate the file to go in the LUSU page run `sh create_lusu_page.sh` or `source create_lusu_page.sh`. This will build the webpage in `dist/lancaster-go-club` as specified earlier,
+**If you want to generate the file to go in the LUSU page run `sh create_lusu_page.sh` or `source create_lusu_page.sh`. This will build the webpage in `docs` as specified earlier,
 then it will run the `inline_to_single_html.py` python script to inline all css and script into the index file to
 create a single temporary file and then will merge this temporary file with `preamble.html` to create the
 file `dist/lusu_page.html` that can be copy-pasted into the LUSU webpage**
