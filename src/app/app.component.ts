@@ -62,16 +62,22 @@ export class AppComponent {
     return headerClass;
   }
 
-  getAggressiveHeaderClass(): object {
-    return getHeaderClass();
+  getAggressiveHeaderClass(size_class: string): object {
+    const headerClass: any = getHeaderClass();
+    headerClass[size_class] = true;
+    return headerClass;
   }
 
   getLevelUpHeaderClass(): object {
     return getHeaderClass();
   }
 
-  getIsAggressiveText(): string {
+  getIsAggressiveBigScreenText(): string {
     return this.isAggressive? "Calm mode" : "Aggressive mode";
+  }
+
+  getIsAggressiveSmallScreenText(): string {
+    return this.isAggressive? "Peace" : "Fight";
   }
 
   getIsLevelUpText(): string {

@@ -8,6 +8,14 @@
   padding: 0 12px 0 0;
 }
 
+.big-screen-aggressive {
+  display: block !important;
+}
+
+.small-screen-aggressive {
+  display: none !important;
+}
+
 .logo-container:hover {cursor: pointer}
 
 .cover {
@@ -22,5 +30,15 @@
 @media (max-width: 600px) {
   .app-pages-container {
     font-size: medium;
+  }
+}
+
+@media (max-width: 431px) {
+  .big-screen-aggressive {
+    display: none !important;
+  }
+
+  .small-screen-aggressive {
+    display: block !important;
   }
 }

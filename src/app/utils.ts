@@ -5,6 +5,8 @@ export function getHeaderClass(): object {
     'w3-padding': true,
     'w3-hide-small': true,
     'w3-selected': false,
+    'small-screen-aggressive': false,
+    'big-screen-aggressive': false,
   };
 }
 

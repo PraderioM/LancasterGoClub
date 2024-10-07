@@ -10,11 +10,20 @@
 <!--    <span [ngClass]=getJosekleHeaderClass() (click)="selectJosekle()">JOSEKLE</span>-->
     <span [ngClass]=getResourcesHeaderClass() (click)="selectResources()">MORE</span>
     <span *ngIf="homeSelected"
-          [ngClass]=getAggressiveHeaderClass()
+          [ngClass]="getAggressiveHeaderClass('big-screen-aggressive')"
+          class="big-screen-aggressive"
           style="float: right !important;"
           [ngStyle]="{'color': isAggressive? 'green' : 'red'}"
           (click)="toggleIsAggressive()">
-      {{getIsAggressiveText()}}
+      {{getIsAggressiveBigScreenText()}}
+    </span>
+    <span *ngIf="homeSelected"
+          [ngClass]="getAggressiveHeaderClass('small-screen-aggressive')"
+          class="small-screen-aggressive"
+          style="float: right !important;"
+          [ngStyle]="{'color': isAggressive? 'green' : 'red'}"
+          (click)="toggleIsAggressive()">
+      {{getIsAggressiveSmallScreenText()}}
     </span>
 <!--    <span *ngIf="rulesSelected"-->
 <!--          [ngClass]=getLevelUpHeaderClass()-->
@@ -26,8 +35,8 @@
   </div>
 </div>
 <div class="app-pages-container">
-<app-home *ngIf="homeSelected" [isAggressive]="isAggressive"></app-home>
-<app-rules *ngIf="rulesSelected" [isLevelUp]="isLevelUp"></app-rules>
-<app-josekle *ngIf="josekleSelected"></app-josekle>
-<app-resources *ngIf="resourcesSelected"></app-resources>
+  <app-home *ngIf="homeSelected" [isAggressive]="isAggressive"></app-home>
+  <app-rules *ngIf="rulesSelected" [isLevelUp]="isLevelUp"></app-rules>
+  <app-josekle *ngIf="josekleSelected"></app-josekle>
+  <app-resources *ngIf="resourcesSelected"></app-resources>
 </div>
