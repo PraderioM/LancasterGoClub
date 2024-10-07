@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {getImageLinkFromId} from "../../utils";
 
 @Component({
   selector: 'app-meeting-details',
@@ -17,4 +18,5 @@ export class MeetingDetailsComponent implements OnInit {
   ngOnInit() {
   }
 
+  protected readonly getImageLinkFromId = getImageLinkFromId;
 }

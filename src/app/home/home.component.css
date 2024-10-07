@@ -1,3 +1,52 @@
 .indenting {
   padding-left: 2vw;
 }
+
+.big-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  cursor: pointer;
+}
+
+.big-img-container {
+  max-width:80%;
+  padding-top: -20em;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.meeting-time-column {
+  width: 49.99999%;
+  align-self: center;
+}
+
+.links-column {
+  width: 49.99999%;
+}
+
+@media (max-width: 680px) {
+  .big-img-container {
+    max-width:90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .big-img-container {
+    max-width:100%;
+  }
+}
+
+@media (max-width: 530px){
+  .meeting-time-column {
+    width: 99.99999%;
+  }
+  .links-column {
+    width: 99.99999%;
+  }
+}

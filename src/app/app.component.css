@@ -1,3 +1,9 @@
+.app-pages-container {
+  font-size: large;
+  text-align: justify;
+  margin-top: -30px
+}
+
 .logo-container{
   padding: 0 12px 0 0;
 }
@@ -11,4 +17,10 @@
   display: block;
   height: 100vh;
   width: auto;
+}
+
+@media (max-width: 600px) {
+  .app-pages-container {
+    font-size: medium;
+  }
 }

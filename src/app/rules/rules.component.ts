@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {getImageLinkFromId} from "../utils";
 
 @Component({
   selector: 'app-rules',
@@ -12,4 +13,6 @@ export class RulesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  protected readonly getImageLinkFromId = getImageLinkFromId;
 }

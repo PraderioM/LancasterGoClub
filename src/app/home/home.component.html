@@ -1,5 +1,12 @@
+
 <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-  <span *ngIf="!isAggressive" class="w3-justify" style="font-size: large">
+  <div class="w3-container w3-content big-img-container" id="josekle-img">
+    <img src="{{getImageLinkFromId('poster.png')}}"
+         class="big-img"
+         title="lancaster-go-club-art-by-Ai-Guan"
+         alt="lancaster-go-club-art-by-Ai-Guan"/>
+  </div>
+  <span *ngIf="!isAggressive" class="w3-justify">
     <p>
       Do you like strategy games, intellectual challenges, complex patterns build from easy rules? Then Go is the game for you!
       <br>
@@ -13,7 +20,7 @@
     </p>
   </span>
 
-  <span *ngIf="isAggressive" class="w3-justify" style="font-size: large">
+  <span *ngIf="isAggressive" class="w3-justify">
     <p>
       Do you like directing a clash between armies, killing enemy battalions or make them live in shame, ruthlessly attacking the weakest groups of an enemy exercit until, in a desperate fight for survival, they lead you to kill their own allies? Then Go is the game for you!
       <br>
@@ -31,24 +38,26 @@
   <!--AND IF YOU DO CHANGE THINGS IN THIS REGION DO IT FOLLOWING THE PROVIDED TEMPLATE.-->
   <!--region Time and location-->
   <div class="w3-row-padding w3-section">
-    <div class="w3-col s4">
-      <h4 style="text-align: left">Weekly meetings:</h4>
-      <!--region Thursday meeting-->
+    <div class="w3-col meeting-time-column">
+      <h4 style="text-align: center;">Weekly meetings:</h4>
+      <!--region Thursday meeting temporary-->
       <!--Thursday meeting information-->
       <app-meeting-details [meetingDay]="'Thursday'"
                            [meetingTime]="'18:00-21:00'"
-                           [place]="'Flyde college LT2'"
-                           [linkToPlace]="'https://use.mazemap.com/#v=1&zlevel=1&center=-2.785559,54.008642&zoom=18&sharepoitype=poi&sharepoi=958836&campusid=341'">
+                           [place]="'Flyde B35'"
+                           [linkToPlace]="'https://use.mazemap.com/#v=1&campusid=341&zlevel=2&center=-2.785333,54.008835&zoom=19.5&sharepoitype=poi&sharepoi=958945'"
+                           [extraInformation]="'weeks 1-2'"
+                           style="width: 100%">
       </app-meeting-details>
       <!--endregion-->
-      <!--region Saturday online meeting-->
+      <!--region Thursday meeting-->
       <br>
-      <br>
-      <br>
-      <app-meeting-details [meetingDay]="'Saturday'"
-                           [meetingTime]="'16:00-19:00'"
-                           [place]="'online meeting'"
-                           [linkToPlace]="'https://discord.gg/P44qfm8s3H'">
+      <!--Thursday meeting information-->
+      <app-meeting-details [meetingDay]="'Thursday'"
+                           [meetingTime]="'18:00-21:00'"
+                           [place]="'Flyde LT2'"
+                           [linkToPlace]="'https://use.mazemap.com/#v=1&zlevel=1&center=-2.785559,54.008642&zoom=18&sharepoitype=poi&sharepoi=958836&campusid=341'"
+                           [extraInformation]="'weeks 3-10'">
       </app-meeting-details>
       <!--endregion-->
       <!--region MEETING TIME TEMPLATE-->
@@ -86,13 +95,12 @@
     </div>
     <!--endregion-->
 
-    <div class="w3-col s4" style="align-content: center">
-      <h4>Discord channel:</h4>
-      <a href="https://discord.gg/P44qfm8s3H"><u>https://discord.gg/P44qfm8s3H</u></a>
-    </div>
-    <div class="w3-col s4" style="text-align: right">
-      <h4>OGS:</h4>
-      <a href="https://online-go.com/group/2607"><u>online-go.com/group/2607</u></a>
+    <div class="w3-col links-column" style="align-content: center">
+      <h4>Join us on:</h4>
+      <p class="links-container">
+        <a href="https://discord.gg/P44qfm8s3H" target="_blank" style="text-align: left"><u>Discord</u></a>
+        <a href="https://online-go.com/group/2607" target="_blank" style="text-align: right"><u>OGS</u></a>
+      </p>
     </div>
   </div>
 </div>

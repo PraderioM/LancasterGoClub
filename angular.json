@@ -14,11 +14,7 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "docs",
-            "baseHref": "/LancasterGoClub/",
-            "index": {
-              "input": "src/index.html",
-              "output": "404.html"
-            },
+            "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -34,6 +30,22 @@
             "scripts": []
           },
           "configurations": {
+            "gh-pages": {
+              "baseHref": "https://praderiom.github.io/LancasterGoClub/",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "1500kb",
+                  "maximumError": "2mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "1.5mb",
+                  "maximumError": "2mb"
+                }
+              ],
+              "outputHashing": "all"
+            },
             "production": {
               "budgets": [
                 {
