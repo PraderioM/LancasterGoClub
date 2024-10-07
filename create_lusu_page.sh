@@ -16,4 +16,4 @@ echo 'Adding preamble.'
 cat preamble.html $TMP_FILE_NAME >> $OUTPUT_FILE_NAME
 rm $TMP_FILE_NAME
 
-echo 'lusu html page has been stored in ' $OUTPUT_FILE_NAME
+echo 'LUSU html page has been stored in ' $OUTPUT_FILE_NAME
