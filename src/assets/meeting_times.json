@@ -1,9 +1,47 @@
+// THESE ARE THE CURRENT MEETING TIMES OF THE CLUB. BELOW A TEMPLATE ON HOW TO MODIFY THEM.
+// After making the changes DO NOT FORGET to upload them on github otherwise they will not be visible in the webpage.
 [
+  {
+    "meetingDay": "Thursday",
+    "meetingTime": "18:00-21:00",
+    "place": "Fylde LT2",
+    "extraInformation": "This is a trial.",
+    "linkToPlace": "https://use.mazemap.com/#v=1&zlevel=1&center=-2.785559,54.008642&zoom=18&sharepoitype=poi&sharepoi=958836&campusid=341'"
+  },
+
   {
     "meetingDay": "Thursday",
     "meetingTime": "18:00-21:00",
     "place": "Fylde LT2",
     "extraInformation": "",
     "linkToPlace": "https://use.mazemap.com/#v=1&zlevel=1&center=-2.785559,54.008642&zoom=18&sharepoitype=poi&sharepoi=958836&campusid=341'"
+  },
+
+  {
+    "meetingDay": "Thursday",
+    "meetingTime": "18:00-21:00",
+    "place": "Fylde LT2",
+    "extraInformation": "This is a trial.",
+    "linkToPlace": "https://use.mazemap.com/#v=1&zlevel=1&center=-2.785559,54.008642&zoom=18&sharepoitype=poi&sharepoi=958836&campusid=341'"
   }
 ]
+
+/*
+In order to REMOVE AN EXISTING MEETING TIME you just need to delete the dictionary (a.k.a. the region surrounded by
+curly "{", "}" brackets ) which contains the information regarding that meeting time.
+
+In order to ADD A NEW MEETING TIME copy the following template, and place it in the above list (a.k.a. the region
+surrounded by square "[", "]" brackets). DO NOT FORGET to place a comma between different meeting times.
+
+
+  {
+    "meetingDay": "Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday", // This is the day of the week you are meeting. Leave one and remove the rest.
+    "meetingTime": "HH:MM-HH:MM",  // Start and finish of meeting time. Boh in format HH:MM (a.k.a. two digits for hour, a semicolumn and two digits for minute).
+    "place": "ROOM NAME", // This is the actual room within Lancaster University in which you will be meeting.
+    "extraInformation": "", // Add any additional information here. For example if this is a temporary location write it here or if the meeting is online write it here.
+    "linkToPlace": "LINK TO MAP"  // A link to Maze Map or other pointing to the meeting location. If it is online make it point to the online meeting place.
+  }
+
+
+DO NOT COPY THE SYMBOL BELOW NOR THIS LINE.
+*/
