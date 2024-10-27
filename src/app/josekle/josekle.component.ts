@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {getImageLinkFromId} from "../utils";
+import {getLinkFromAssetName} from "../utils";
 
 @Component({
   selector: 'app-josekle',
@@ -13,5 +13,5 @@ export class JosekleComponent implements OnInit {
   ngOnInit() {
   }
 
-  protected readonly getImageLinkFromId = getImageLinkFromId;
+  protected readonly getLinkFromAssetName = getLinkFromAssetName;
 }

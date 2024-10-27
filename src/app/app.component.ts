@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {getHeaderClass} from './utils';
 
 @Component({
@@ -6,7 +6,7 @@ import {getHeaderClass} from './utils';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   homeSelected = true;
   rulesSelected = false;
   josekleSelected = false;
@@ -14,6 +14,12 @@ export class AppComponent {
 
   isAggressive = false;
   isLevelUp = false;
+
+  isLUSUPage: boolean = false;
+
+  ngOnInit(): void {
+    this.isLUSUPage = window.location.href === 'https://lancastersu.co.uk/groups/lancaster-go-club'
+  }
 
   deselectAll(): void {
     this.homeSelected = false;

@@ -1,20 +1,22 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {getImageLinkFromId} from "../utils";
+import {getLinkFromAssetName} from "../utils";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   @Input() isAggressive: boolean = false;
-  lusuPage: boolean = false;
+  @Input() isLUSUPage: boolean = false;
+  meetingDetails: any = [];
 
-  constructor() { }
 
-  ngOnInit(): void {
-    this.lusuPage = window.location.href === 'https://lancastersu.co.uk/groups/lancaster-go-club'
+  constructor(private http: HttpClient) {
+    this.http.get('https://raw.githubusercontent.com/PraderioM/LancasterGoClub/refs/heads/master/src/assets/meeting_times.json')
+      .subscribe(data => this.meetingDetails = data);
   }
 
-    protected readonly getImageLinkFromId = getImageLinkFromId;
+    protected readonly getLinkFromAssetName = getLinkFromAssetName;
 }

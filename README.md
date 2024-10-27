@@ -4,7 +4,31 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Time and location changes
 
-**The time and location appearing in the webpage are defined in the file `src/app/home/home.component.html` further information on how to change them can be found in the comments of that file.**
+The time and location appearing in the webpage are defined in the JSON file **`src/assets/meeting_times.json`.**
+To update meeting times you need to modify that file. DO NOT FORGET to upload your changes to github otherwise they will not be visible in the webpage.
+
+In order to **REMOVE AN EXISTING MEETING TIME** you just need to delete the dictionary (a.k.a. the region surrounded by curly "{", "}" brackets ) which contains the information regarding that meeting time.
+
+In order to **ADD A NEW MEETING TIME** copy the following template, and place it in the above list (a.k.a. the region surrounded by square "[", "]" brackets).
+**DO NOT FORGET** to place a comma between different meeting times.
+
+`
+  {
+    "meetingDay": "Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday",
+    "meetingTime": "HH:MM-HH:MM",
+    "place": "ROOM NAME",
+    "extraInformation": "",
+    "linkToPlace": "LINK TO MAP"
+  }
+`
+
+The above parameters are described as follows:
+  **meetingDay**: Is the day of the week you are meeting. Leave one and remove the rest.
+  **meetingTime**: Is the start and finish of meeting time. Boh in format HH:MM (a.k.a. two digits for hour, a semicolon and two digits for minute).
+  **place**: Is the actual room within Lancaster University in which you will be meeting.
+  **extraInformation**: Any additional information should be added here. For example if this is a temporary location write it here or if the meeting is online write it here.
+  **linkToPlace**: A link to Maze Map or other pointing to the meeting location. If it is online make it point to the online meeting place.
+
 
 ## Development server
 

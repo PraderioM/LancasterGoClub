@@ -10,7 +10,6 @@ export function getHeaderClass(): object {
   };
 }
 
-export function getImageLinkFromId(id: string): string {
-  // return 'https://drive.google.com/thumbnail?id=' + id;
-  return 'https://github.com/PraderioM/LancasterGoClub/blob/master/src/assets/'+id+'?raw=true'
+export function getLinkFromAssetName(asset_name: string): string {
+  return 'https://github.com/PraderioM/LancasterGoClub/blob/master/src/assets/'+asset_name+'?raw=true'
 }

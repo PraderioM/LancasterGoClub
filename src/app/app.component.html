@@ -35,7 +35,7 @@
   </div>
 </div>
 <div class="app-pages-container">
-  <app-home *ngIf="homeSelected" [isAggressive]="isAggressive"></app-home>
+  <app-home *ngIf="homeSelected" [isAggressive]="isAggressive" [isLUSUPage]="isLUSUPage"></app-home>
   <app-rules *ngIf="rulesSelected" [isLevelUp]="isLevelUp"></app-rules>
   <app-josekle *ngIf="josekleSelected"></app-josekle>
   <app-resources *ngIf="resourcesSelected"></app-resources>
