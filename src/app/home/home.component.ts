@@ -8,10 +8,12 @@ import {getImageLinkFromId} from "../utils";
 })
 export class HomeComponent implements OnInit {
   @Input() isAggressive: boolean = false;
+  lusuPage: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.lusuPage = window.location.href === 'https://lancastersu.co.uk/groups/lancaster-go-club'
   }
 
     protected readonly getImageLinkFromId = getImageLinkFromId;
