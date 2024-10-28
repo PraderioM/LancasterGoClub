@@ -1,11 +1,19 @@
 
 <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-  <div class="w3-container w3-content big-img-container" id="josekle-img">
-    <img src="{{getLinkFromAssetName('poster.png')}}"
-         class="big-img"
+  <div *ngIf="!isAggressive" class="w3-container w3-content big-img-container" id="josekle-img">
+    <a href="{{getLinkFromAssetName('poster.png')}}" border=0>
+	  <img src="{{getLinkFromAssetName('poster-small.png')}}"
+		 class = "big-img"  
          title="lancaster-go-club-art-by-Ai-Guan"
-         alt="lancaster-go-club-art-by-Ai-Guan"/>
+         alt="lancaster-go-club-art-by-Ai-Guan"/></a>
   </div>
+  <div *ngIf="isAggressive" class="w3-container w3-content big-img-container" id="josekle-img">
+    <a href="{{getLinkFromAssetName('poster-aggressive.png')}}" border=0>
+	  <img src="{{getLinkFromAssetName('poster-aggressive-small.png')}}"
+		 class = "big-img"  
+         title="lancaster-go-club-art-by-Ai-Guan-destroyed-by-Leandro"
+         alt="lancaster-go-club-art-by-Ai-Guan-destroyed-by-Leandro"/></a>
+  </div>  
   <span *ngIf="!isAggressive" class="w3-justify">
     <p *ngIf="!isLUSUPage">
       The <b>Lancaster Go club</b> is a friendly community of Go players living in Lancaster and whom first started gathering over 2 decades ago. We meet in Lancaster University (<a href="https://use.mazemap.com/#v=1&campusid=341&zlevel=1&center=-2.785233,54.008729&zoom=18&sharepoitype=poi&sharepoi=1000463068" target="_blank">Fylde College</a>). <b>Our club is free and open to anyone</b>, including players not affiliated with the university.
